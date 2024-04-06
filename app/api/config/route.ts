@@ -20,7 +20,6 @@ declare global {
 }
 
 async function handle() {
-  console.log("app/api/config/toute.ts/handle()");
   return NextResponse.json(DANGER_CONFIG);
 }
 
