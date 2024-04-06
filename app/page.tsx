@@ -7,7 +7,7 @@ import { getServerSideConfig } from "./config/server";
 const serverConfig = getServerSideConfig();
 
 export default async function App() {
-  // test Auto-Deploy.
+  // test Auto-Deploy
   console.log("page.tsx/App()");
   return (
     <>
