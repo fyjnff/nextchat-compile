@@ -32,6 +32,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  console.log("layout.tsx/RootLayout()");
   return (
     <html lang="en">
       <head>
