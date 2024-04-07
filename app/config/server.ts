@@ -1,5 +1,6 @@
 import md5 from "spark-md5";
 import { DEFAULT_MODELS } from "../constant";
+import { FunCounterOutput } from "../TestTools";
 
 declare global {
   namespace NodeJS {
@@ -78,7 +79,7 @@ export const getServerSideConfig = () => {
     `[Server Config] using ${randomIndex + 1} of ${apiKeys.length} api key`,
   );
 
-  console.log("app/config/server.ts/getServerSideConfig()");
+  FunCounterOutput(__filename, "getServerSideConfig");
   return {
     baseUrl: process.env.BASE_URL,
     apiKey,
