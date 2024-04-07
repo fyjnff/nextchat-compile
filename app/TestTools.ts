@@ -16,7 +16,7 @@ export function sub1_FunCounterOutput(file_name: string, fun_name: string) {
   const name: fun_cou = { file_name: file_name, fun_name: fun_name };
 
   if (!!function_counter.get(name)) {
-    function_counter.set(name, function_counter.get(name) + 1);
+    function_counter.set(name, (function_counter.get(name) as number) + 1);
   } else {
     function_counter.set(name, 1);
   }
